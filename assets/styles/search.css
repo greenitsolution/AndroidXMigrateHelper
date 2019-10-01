@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: Source Sans Pro, sans-serif;
+    background-color: #eee;
+    color: #293c4b;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    color: #60b5cc;
+}
+
+code {
+    font-family: Source Code Pro, consolas, inconsolata, monospace;
+}
+
+.searchApp {
+    flex: 1;
+}
+
+.searchHeader {
+    padding: 1.5rem 0;
+    background-color: #ddd;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.searchBranding {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.searchLogo {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.searchTitle {
+    display: block;
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.searchForm {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.searchForm input {
+    display: block;
+    flex: 1;
+    -webkit-appearance: none;
+    font-size: 16px;
+    font-family: Source Code Pro, consolas, inconsolata, monospace;
+    margin: 0 0.5rem 0 0;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+}
+
+.searchForm button {
+    display: block;
+    width: 6rem;
+    margin: 0;
+    -webkit-appearance: none;
+    font-size: 16px;
+    font-family: Source Sans Pro, sans-serif;
+    padding: 0.5rem 1rem;
+    border: 1px solid #607D8B;
+    border-radius: 3px;
+    background-color: #607D8B;
+    color: #fff;
+}
+
+.searchForm input:disabled,
+.searchForm button:disabled {
+    background-color: #eee;
+    border-color: #bbb;
+    color: #666;
+}
+
+.searchFormDisabled label::after {
+    color: #666;
+}
+
+.searchStatus {
+    margin: 3rem auto;
+    padding: 0 1rem;
+    max-width: 800px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.searchBody {
+    margin: 3rem auto;
+    padding: 0 1rem;
+    max-width: 800px;
+}
+
+.searchIntro h1 {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.searchIntro h2 {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.searchQuery {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.searchResult {
+    margin-top: 16rem;
+    padding: 0 1rem;
+    height: auto;
+}
+
+.searchChunk {
+    width: 100%;
+    margin: 0 auto 1.5rem auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.chunkAnnotation {
+    background-color: #293c4b;
+    padding: 1rem 0 0 0;
+    color: #ddd;
+}
+
+.chunkAnnotation pre {
+    margin: 0;
+    padding: 0 1rem 1rem 1rem;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.chunkAnnotation a {
+    color: #60b5cc;
+    text-decoration: none;
+}
+
+.chunkOldAndroidSupportLibraryClass {
+    padding: 1rem;
+    margin: 10px;
+}
+
+.chunkOldAndroidSupportLibraryClass p {
+    margin: 0;
+}
+
+.chunkOldAndroidSupportLibraryClass code {
+    background-color: #eee;
+    color: #293c4b;
+    font-size: 0.85em;
+    padding: 0.125em 0.5em;
+    border-radius: 2px;
+}
+
+.chunkNewAndroidXClass {
+    border-top: 1px solid #eee;
+    padding: 1rem;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chunkPath,
+.chunkPath a {
+    color: #99cc99;
+    text-decoration: none;
+}
+
+.chunkModule,
+.chunkModule a {
+    color: #ea157a;
+    text-decoration: none;
+}
+
+
+.searchFooter {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    color: #bbb;
+}
+
+.searchFooter p {
+    margin: 0;
+}
+
+.searchFooter a {
+    color: inherit;
+}
+
+.searchFooter a:hover {
+    color: #60b5cc;
+}
+
+.searchNav h4 {
+    margin: 0;
+    font-weight: normal;
+    display: inline-block;
+}
+
+.searchNav span,
+.searchNav a {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+#notice {
+    visibility: hidden;
+    min-width: 150px;
+    margin-left: -80px;
+    background-color: #5A6378;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#notice.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 0.5s;
+    animation: fadein 0.5s, fadeout 0.5s 0.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
