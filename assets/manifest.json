@@ -1,7 +1,7 @@
 {
   "theme_color": "#dddddd",
   "orientation": "any",
-  "start_url": "/AndroidXMigrateHelper",
+  "start_url": "/AndroidXMigrateHelper/index.html",
   "background_color": "#ffffff",
   "display": "standalone",
   "lang": "en",
