@@ -2,24 +2,24 @@ importScripts('sw-cache-polyfill.js');
 
 var CACHE_VERSION = 'app-v1';
 var CACHE_FILES = [
-    '/',
-    'index.html',
-    'assets/scripts/script.js',
-    'assets/scripts/clipboard-copy-element.js',
-    'assets/styles/search.css',
-    'favicon.ico',
-    'assets/manifest.json',
-    'assets/icons/icon-72x72.png',
-    'assets/icons/icon-96x96.png',
-    'assets/icons/icon-128x128.png',
-    'assets/icons/icon-144x144.png',
-    'assets/icons/icon-152x152.png',
-    'assets/icons/icon-180x180.png',
-    'assets/icons/icon-192x192.png',
-    'assets/icons/icon-384x384.png',
-    'assets/icons/icon-512x512.png',
-    'assets/data/androidx-artifact-mapping.json',
-    'assets/data/androidx-class-mapping.json'
+    '/AndroidXMigrateHelper',
+    '/AndroidXMigrateHelper/index.html',
+    '/AndroidXMigrateHelper/assets/scripts/script.js',
+    '/AndroidXMigrateHelper/assets/scripts/clipboard-copy-element.js',
+    '/AndroidXMigrateHelper/assets/styles/search.css',
+    '/AndroidXMigrateHelper/favicon.ico',
+    '/AndroidXMigrateHelper/assets/manifest.json',
+    '/AndroidXMigrateHelper/assets/icons/icon-72x72.png',
+    '/AndroidXMigrateHelper/assets/icons/icon-96x96.png',
+    '/AndroidXMigrateHelper/assets/icons/icon-128x128.png',
+    '/AndroidXMigrateHelper/assets/icons/icon-144x144.png',
+    '/AndroidXMigrateHelper/assets/icons/icon-152x152.png',
+    '/AndroidXMigrateHelper/assets/icons/icon-180x180.png',
+    '/AndroidXMigrateHelper/assets/icons/icon-192x192.png',
+    '/AndroidXMigrateHelper/assets/icons/icon-384x384.png',
+    '/AndroidXMigrateHelper/assets/icons/icon-512x512.png',
+    '/AndroidXMigrateHelper/assets/data/androidx-artifact-mapping.json',
+    '/AndroidXMigrateHelper/assets/data/androidx-class-mapping.json'
 ];
 
 self.addEventListener('install', function (event) {
